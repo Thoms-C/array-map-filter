@@ -66,8 +66,9 @@ function getFoodCategories(foods) {return foods.map( (key) => {
     return `${key.food} is suitable for vegetarians`;
   } else {
     return `${key.food} is not suitable for vegetarians`;
-  })
-}}
+  }
+})
+}
 
 
 // DON'T TOUCH THIS!
