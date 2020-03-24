@@ -12,8 +12,12 @@ Expected OUTPUT for this sample:
   [7, 2, 0, 3, 11]
 
 */
+const numbers = [7, -4, 2, 0, -10, 3, 11]
 
 function getPositiveNumbers(numbers) {
+  return numbers.filter(number => {
+    return number >= 0;
+  })
 }
 
 // If you need, you can always visualize the result with a console.log.

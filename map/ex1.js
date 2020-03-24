@@ -25,10 +25,19 @@ Expected OUTPUT for this sample array:
   ]
 
 */
-const getStringsLength = ['Cat', 'Lion', 'Tiger', 'Jaguar', 'Leopard']
+const strings =   
+[
+    'Chicken',
+    'Bacon',
+    'Tofu',
+    'Mayonnaise'
+  ]
 
-console.log(getStringsLength.map(getStringsLength => getStringsLength.length));
-
+function getStringsLength(strings) {
+  return strings.map(string => {
+    return string + ' contains ' + string.length + ' characters'
+  })
+}
 
 // If you need, you can always visualize the result with a console.log.
 // In that case, uncomment the line below (you can also add your own

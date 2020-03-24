@@ -60,9 +60,38 @@ Expected OUTPUT for this sample:
   ]
 
  */
+const movies = 
+[
+  {
+    name: 'Crazy Rich Asians',
+    rating: 93
+  },
+  {
+    name: 'Skyscraper',
+    rating: 46
+  },
+  {
+    name: 'Leave No Trace',
+    rating: 100
+  },
+  {
+    name: 'White Boy Rick',
+    rating: 60
+  }
+]
 
-function getMoviesFreshness(movies) {
+function getMoviesFreshness(movies) { movies.map( (movie) => {
+  if (movie.rating < 60) {
+    return movie.label='rotten'}
+  else
+  if(60 <= movie.rating && 75 >= movie.rating) {
+    return movie.label='fresh'}
+  else if (75 < movie.rating) {
+    return movie.label='certified fresh'}})
+  return movies
 }
+
+
 
 
 
