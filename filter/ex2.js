@@ -36,8 +36,8 @@ const names =
 
 function keepStarks(names) {
   return names.filter(name => {
-    name.endsWith('Stark')
-  } )
+    return name.endsWith('Stark')
+  })
 }
 
 // DON'T TOUCH THIS!
